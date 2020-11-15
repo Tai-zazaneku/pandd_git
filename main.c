@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-int main(){
-  int a, b;
-  char c;
+int main()
+{
+    int a, b;
+    char c;
 
-  scanf("%d %c %d", &a, &c, &b);
+    scanf("%d %c %d", &a, &c, &b);
 
   if(c == '+'){
     printf("%d¥n", a + b);
@@ -18,6 +19,8 @@ int main(){
     printf("%d¥n", a * b);
   }
 
+  if (c == '/'){
+    printf("%d", a / b);
+  }
   return 0;
 }
-  
